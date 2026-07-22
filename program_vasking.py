@@ -24,6 +24,10 @@ def make_list():
             diff = (date.today() - dato.date()).days
             if diff >= 90:
                 liste.append(line[1])
+        elif line[0] == "Half":
+            diff = (date.today() - dato.date()).days
+            if diff >= 182:
+                liste.append(line[1])
         elif line[0] == "Year":
             diff = (date.today() - dato.date()).days
             if diff >= 365:
